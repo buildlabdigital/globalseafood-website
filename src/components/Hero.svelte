@@ -1,6 +1,9 @@
 <script>
   let logo = `https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600`;
   let heroImage = "/hero_image_2x.png";
+  let tagline = `Buy and sell the world's best seafood`;
+  let subTagline = `Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.`;
+  let contactEmail = "jon@globalseafoodexchange.com";
 </script>
 
 <!--
@@ -34,12 +37,12 @@
               <span
                 class="rounded bg-indigo-50 px-2.5 py-1 text-xs font-semibold text-indigo-600 tracking-wide uppercase"
               >
-                What's new
+                Coming Late 2021
               </span>
               <span
                 class="inline-flex items-center text-sm font-medium text-indigo-600 space-x-1"
               >
-                <span>Just shipped version 0.1.0</span>
+                <a href="mailto={contactEmail}">Contact</a>
                 <!-- Heroicon name: solid/chevron-right -->
                 <svg
                   class="h-5 w-5"
@@ -61,11 +64,10 @@
             <h1
               class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl"
             >
-              Server management for growing teams
+              {tagline}
             </h1>
             <p class="mt-6 text-xl text-gray-500">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo.
+              {subTagline}
             </p>
           </div>
           <form action="#" class="mt-12 sm:max-w-lg sm:w-full sm:flex">
