@@ -1,5 +1,5 @@
 <script>
-  let logo = `https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600`;
+  let logo = `https://tailwindui.com/img/logos/workflow-mark.svg?color=blue&shade=600`;
   let heroImage = "/hero_image_2x.png";
   let tagline = `Buy and sell the world's best seafood`;
   let subTagline = `Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.`;
@@ -38,12 +38,12 @@
           <div>
             <a href="#" class="inline-flex space-x-4">
               <span
-                class="rounded bg-indigo-50 px-2.5 py-1 text-xs font-semibold text-indigo-600 tracking-wide uppercase"
+                class="rounded bg-blue-50 px-2.5 py-1 text-xs font-semibold text-blue-600 tracking-wide uppercase"
               >
                 Coming Late 2021
               </span>
               <span
-                class="inline-flex items-center text-sm font-medium text-indigo-600 space-x-1"
+                class="inline-flex items-center text-sm font-medium text-blue-600 space-x-1"
               >
                 <a href="mailto:{contactEmail}">Contact</a>
                 <!-- Heroicon name: solid/chevron-right -->
@@ -79,14 +79,14 @@
               <input
                 id="hero-email"
                 type="email"
-                class="block w-full border border-gray-300 rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                class="block w-full border border-gray-300 rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                 placeholder="Enter your email"
               />
             </div>
             <div class="mt-4 sm:mt-0 sm:ml-3">
               <button
                 type="submit"
-                class="block w-full rounded-md border border-transparent px-5 py-3 bg-indigo-600 text-base font-medium text-white shadow hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:px-10"
+                class="block w-full rounded-md border border-transparent px-5 py-3 bg-blue-600 text-base font-medium text-white shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:px-10"
                 >Notify me</button
               >
             </div>
