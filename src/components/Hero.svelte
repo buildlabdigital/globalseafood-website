@@ -1,5 +1,5 @@
 <script>
-  let logo = `https://tailwindui.com/img/logos/workflow-mark.svg?color=blue&shade=600`;
+  let logo = `/GSELogo.png`;
   let heroImage = "/hero_image_2x.png";
   let tagline = `Buy and sell the world's best seafood`;
   let subTagline = `Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.`;
@@ -31,8 +31,12 @@
     >
       <div>
         <div>
-          <!-- <img class="h-11 w-auto" src={logo} alt="Global Seafood Exchange" /> -->
-          <span class="font-bold text-2xl">Global Seafood Exchange</span>
+          <img
+            class="h-24 rounded-lg p-4 bg-gray-800 w-auto"
+            src={logo}
+            alt="Global Seafood Exchange"
+          />
+          <!-- <span class="font-bold text-2xl">Global Seafood Exchange</span> -->
         </div>
         <div class="mt-20">
           <div>
