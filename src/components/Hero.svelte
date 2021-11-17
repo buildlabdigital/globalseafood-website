@@ -24,7 +24,7 @@
   }
   ```
 -->
-<div class="bg-white pb-8 sm:pb-12 lg:pb-12">
+<div class="pb-8 sm:pb-12 lg:pb-12">
   <div class="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48">
     <div
       class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24"
@@ -103,7 +103,7 @@
                     alt="Apple app store"
                   />
                 </a>
-                <a href={googleLink} class="h-20 py-1 flex justify-center">
+                <a href={appleLink} class="h-20 py-1 flex justify-center">
                   <img
                     class="h-full"
                     src="/google-play-badge.png"
@@ -123,7 +123,7 @@
       >
         <div class="hidden sm:block">
           <div
-            class="absolute inset-y-0 left-1/2 w-screen bg-gray-50 rounded-l-3xl lg:left-80 lg:right-0 lg:w-full"
+            class="absolute inset-y-0 left-1/2 w-screen bg-blue-300 rounded-l-3xl lg:left-80 lg:right-0 lg:w-full"
           />
           <svg
             class="absolute top-8 right-1/2 -mr-3 lg:m-0 lg:left-0"
@@ -146,7 +146,7 @@
                   y="0"
                   width="4"
                   height="4"
-                  class="text-gray-200"
+                  class="text-blue-300"
                   fill="currentColor"
                 />
               </pattern>
