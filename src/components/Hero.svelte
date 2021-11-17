@@ -8,22 +8,6 @@
   let googleLink = "/";
 </script>
 
-<!--
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
 <div class="pb-8 sm:pb-12 lg:pb-12">
   <div class="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48">
     <div
@@ -107,7 +91,7 @@
                     alt="Apple app store"
                   />
                 </a>
-                <a href={appleLink} class="h-20 py-1 flex justify-center">
+                <a href={googleLink} class="h-20 py-1 flex justify-center">
                   <img
                     class="h-full"
                     src="/google-play-badge.png"
