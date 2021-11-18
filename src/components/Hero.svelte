@@ -1,9 +1,9 @@
 <script>
   let logo = `/GSELogo.png`;
   let heroImage = "/hero_image_2x.png";
-  let tagline = `Buy and sell the world's best seafood`;
-  let subTagline = `Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.`;
-  let contactEmail = "jon@globalseafoodexchange.com";
+  let tagline = `The World's Seafood Marketplace`;
+  let subTagline = `Connecting the World's seafood wholesalers and processors to make buying and selling seafood easy.`;
+  let contactEmail = "gse@globalseafoodexchange.com";
   let appleLink = "/";
   let googleLink = "/";
 </script>
@@ -16,7 +16,7 @@
       <div>
         <div>
           <img
-            class="h-24 rounded-lg p-4 bg-gray-800 w-auto"
+            class="h-40 rounded-lg p-0 bg-gse-pacificBlue w-auto"
             src={logo}
             alt="Global Seafood Exchange"
           />
@@ -26,12 +26,12 @@
           <div>
             <a href="#" class="inline-flex space-x-4">
               <span
-                class="rounded bg-blue-50 px-2.5 py-1 text-xs font-semibold text-blue-600 tracking-wide uppercase"
+                class="rounded bg-gse-pacificBlueMessage px-2.5 py-1 text-s font-semibold text-white tracking-wide uppercase"
               >
                 Coming Late 2021
               </span>
               <span
-                class="inline-flex items-center text-sm font-medium text-blue-600 space-x-1"
+                class="inline-flex items-center text-s font-semibold text-white space-x-1"
               >
                 <a href="mailto:{contactEmail}">Contact</a>
                 <!-- Heroicon name: solid/chevron-right -->
@@ -53,11 +53,11 @@
           </div>
           <div class="mt-6 sm:max-w-xl">
             <h1
-              class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl"
+              class="text-4xl font-extrabold text-white tracking-tight sm:text-5xl"
             >
               {tagline}
             </h1>
-            <p class="mt-6 text-xl text-gray-500">
+            <p class="mt-6 text-xl text-gse-pacificGrey">
               {subTagline}
             </p>
           </div>
@@ -80,7 +80,7 @@
             </div>
           </form> -->
           <div class="mt-6 mx-auto">
-            <div class="flex items-center divide-x divide-gray-300">
+            <div class="flex items-center divide-x divide-gse-pacificGrey">
               <div
                 class="min-w-0 flex-1 flex items-center justify-center sm:justify-start py-1 text-sm text-gray-500 sm:py-3"
               >
@@ -91,13 +91,13 @@
                     alt="Apple app store"
                   />
                 </a>
-                <a href={googleLink} class="h-20 py-1 flex justify-center">
+                <!-- <a href={googleLink} class="h-20 py-1 flex justify-center">
                   <img
                     class="h-full"
                     src="/google-play-badge.png"
                     alt="Google Play store"
                   />
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@
       >
         <div class="hidden sm:block">
           <div
-            class="absolute inset-y-0 left-1/2 w-screen bg-blue-300 rounded-l-3xl lg:left-80 lg:right-0 lg:w-full"
+            class="absolute inset-y-0 left-1/2 w-screen bg-gse-pacificBlueMessage rounded-l-3xl lg:left-80 lg:right-0 lg:w-full"
           />
           <svg
             class="absolute top-8 right-1/2 -mr-3 lg:m-0 lg:left-0"
@@ -134,7 +134,7 @@
                   y="0"
                   width="4"
                   height="4"
-                  class="text-blue-300"
+                  class="text-gse-pacificGrey"
                   fill="currentColor"
                 />
               </pattern>
