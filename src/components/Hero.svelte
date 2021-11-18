@@ -24,7 +24,7 @@
         </div>
         <div class="mt-20">
           <div>
-            <a href="#" class="inline-flex space-x-4">
+            <div class="inline-flex space-x-4">
               <span
                 class="rounded bg-gse-pacificBlueMessage px-2.5 py-1 text-s font-semibold text-white tracking-wide uppercase"
               >
@@ -49,7 +49,7 @@
                   />
                 </svg>
               </span>
-            </a>
+            </div>
           </div>
           <div class="mt-6 sm:max-w-xl">
             <h1
