@@ -5,7 +5,7 @@
 </script>
 
 <Hero />
-<div class="relative pt-16 pb-32 overflow-hidden">
+<!--<div class="relative pt-16 pb-32 overflow-hidden">
   <FeatureImageLeft />
   <FeatureImageRight />
-</div>
+</div> -->
