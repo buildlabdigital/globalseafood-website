@@ -8,17 +8,6 @@ const config = {
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
       },
-    },
-  },
-  plugins: [],
-};
-
-module.exports = config;
-
-module.exports = {
-  purge: [],
-  theme: {
-    extend: {
       colors: {
         gse: {
           pacificBlue: "#002F3B",
@@ -31,6 +20,7 @@ module.exports = {
       },
     },
   },
-  variants: {},
   plugins: [],
 };
+
+module.exports = config;
