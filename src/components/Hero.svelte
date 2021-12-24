@@ -28,7 +28,7 @@
               <span
                 class="rounded bg-gse-pacificBlueMessage px-2.5 py-1 text-s font-semibold text-white tracking-wide uppercase"
               >
-                Coming Late 2021
+                Coming Q1 2022
               </span>
               <span
                 class="inline-flex items-center text-s font-semibold text-white space-x-1"
