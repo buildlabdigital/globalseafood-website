@@ -1,6 +1,5 @@
 <script>
   import SellOfferDetail from "./SellOfferDetail.svelte";
-
   let logo = `/GSELogo.png`;
   let sellOfferDetail = "/SellOfferDetail.png";
   let tagline = `The World's Seafood Marketplace`;
@@ -42,25 +41,24 @@
         </div>
         <div class="mt-6">
           <h2 class="text-3xl font-extrabold tracking-tight text-white">
-            Stay on top of customer support
+            Sell or Offer
           </h2>
           <p class="mt-4 text-lg text-gray-500">
-            Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
-            bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet
-            sagittis viverra duis. In venenatis sem arcu pretium pharetra at.
-            Lectus viverra dui tellus ornare pharetra.
+            Easliy Sell or Offer... Easliy Sell or Offer... Easliy Sell or
+            Offer... Easliy Sell or Offer... Easliy Sell or Offer... Easliy Sell
+            or Offer... Easliy Sell or Offer... Easliy Sell or Offer...
           </p>
-          <div class="mt-6">
+          <!-- <div class="mt-6">
             <a
               href="/"
               class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gse-pacificBlueMessage hover:bg-indigo-700"
             >
               Get started
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
-      <div class="mt-8 border-t border-gray-200 pt-6">
+      <!-- <div class="mt-8 border-t border-gray-200 pt-6">
         <blockquote>
           <div>
             <p class="text-base text-gray-500">
@@ -84,7 +82,7 @@
             </div>
           </footer>
         </blockquote>
-      </div>
+      </div> -->
     </div>
     <div class="mt-12 sm:mt-16 lg:mt-0">
       <div
@@ -92,7 +90,7 @@
       >
         <img
           class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-40 lg:h-full lg:w-auto lg:max-w-none"
-          src={SellOfferDetail}
+          src={sellOfferDetail}
           alt="Inbox user interface"
         />
       </div>

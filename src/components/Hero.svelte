@@ -1,6 +1,6 @@
 <script>
   let logo = `/GSELogo.png`;
-  let heroImage = "/hero_image_2x.png";
+  let listings = "/Listings.png";
   let tagline = `The World's Seafood Marketplace`;
   let subTagline = `Connecting the World's seafood wholesalers and processors to make buying and selling seafood easy.`;
   let contactEmail = "gse@globalseafoodexchange.com";
@@ -151,7 +151,7 @@
         >
           <img
             class="w-full drop-shadow-2xl lg:h-full lg:w-auto lg:max-w-none"
-            src={heroImage}
+            src={listings}
             alt=""
           />
         </div>

@@ -1,8 +1,7 @@
 <script>
   import SellOfferDetail from "./SellOfferDetail.svelte";
-
   let logo = `/GSELogo.png`;
-  let sellOfferDetail = "/SellOfferDetail.png";
+  let history = "/History.png";
   let tagline = `The World's Seafood Marketplace`;
   let subTagline = `Connecting the World's seafood wholesalers and processors to make buying and selling seafood easy.`;
   let contactEmail = "gse@globalseafoodexchange.com";
@@ -42,49 +41,48 @@
         </div>
         <div class="mt-6">
           <h2 class="text-3xl font-extrabold tracking-tight text-white">
-            Stay on top of customer support
+            Manage Orders, Offers, & Listings
           </h2>
           <p class="mt-4 text-lg text-gray-500">
-            Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
-            bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet
-            sagittis viverra duis. In venenatis sem arcu pretium pharetra at.
-            Lectus viverra dui tellus ornare pharetra.
+            Easliy Sell or Offer... Easliy Sell or Offer... Easliy Sell or
+            Offer... Easliy Sell or Offer... Easliy Sell or Offer... Easliy Sell
+            or Offer... Easliy Sell or Offer... Easliy Sell or Offer...
           </p>
-          <div class="mt-6">
-            <a
-              href="/"
-              class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gse-pacificBlueMessage hover:bg-indigo-700"
-            >
-              Get started
-            </a>
-          </div>
+          <!-- <div class="mt-6">
+              <a
+                href="/"
+                class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gse-pacificBlueMessage hover:bg-indigo-700"
+              >
+                Get started
+              </a>
+            </div> -->
         </div>
       </div>
-      <div class="mt-8 border-t border-gray-200 pt-6">
-        <blockquote>
-          <div>
-            <p class="text-base text-gray-500">
-              &ldquo;Cras velit quis eros eget rhoncus lacus ultrices sed diam.
-              Sit orci risus aenean curabitur donec aliquet. Mi venenatis in
-              euismod ut.&rdquo;
-            </p>
-          </div>
-          <footer class="mt-3">
-            <div class="flex items-center space-x-3">
-              <div class="flex-shrink-0">
-                <img
-                  class="h-6 w-6 rounded-full"
-                  src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
-                  alt=""
-                />
-              </div>
-              <div class="text-base font-medium text-gray-700">
-                Marcia Hill, Digital Marketing Manager
-              </div>
+      <!-- <div class="mt-8 border-t border-gray-200 pt-6">
+          <blockquote>
+            <div>
+              <p class="text-base text-gray-500">
+                &ldquo;Cras velit quis eros eget rhoncus lacus ultrices sed diam.
+                Sit orci risus aenean curabitur donec aliquet. Mi venenatis in
+                euismod ut.&rdquo;
+              </p>
             </div>
-          </footer>
-        </blockquote>
-      </div>
+            <footer class="mt-3">
+              <div class="flex items-center space-x-3">
+                <div class="flex-shrink-0">
+                  <img
+                    class="h-6 w-6 rounded-full"
+                    src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+                    alt=""
+                  />
+                </div>
+                <div class="text-base font-medium text-gray-700">
+                  Marcia Hill, Digital Marketing Manager
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+        </div> -->
     </div>
     <div class="mt-12 sm:mt-16 lg:mt-0">
       <div
@@ -92,7 +90,7 @@
       >
         <img
           class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-40 lg:h-full lg:w-auto lg:max-w-none"
-          src={SellOfferDetail}
+          src={history}
           alt="Inbox user interface"
         />
       </div>
