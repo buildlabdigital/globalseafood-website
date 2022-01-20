@@ -1,14 +1,17 @@
 <script>
+  import Blob from "./Blob.svelte";
+
   export let title = "Lorem ipsum something";
   export let description = "";
   export let imageUrl = "";
   export let imageSide = "left";
+  export let linkUrl = "/";
 </script>
 
 {#if imageSide === "left"}
-  <div class="mt-24 overflow-hidden">
+  <div class="mt-12 lg:mt-18 overflow-hidden">
     <div
-      class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24"
+      class="lg:mx-auto lg:max-w-6xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24"
     >
       <div
         class="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2"
@@ -44,23 +47,24 @@
               {description}
             </p>
             <!-- <div class="mt-6">
-                <a
-                  href="/"
-                  class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gse-pacificBlueMessage hover:bg-indigo-700"
-                >
-                  Get started
-                </a>
-              </div> -->
+              <a
+                href={linkUrl}
+                class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gse-pacificBlueMessage hover:bg-indigo-700"
+              >
+                Get started
+              </a>
+            </div> -->
           </div>
         </div>
       </div>
 
       <div class="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
         <div
-          class="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full"
+          class="px-4 -ml-0 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full"
         >
+          <!-- <Blob /> -->
           <img
-            class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-40 lg:h-full lg:w-auto lg:max-w-none"
+            class="w-auto  rounded-xl shadow-xl rounded-3 ring-1 ring-black ring-opacity-5 lg:absolute lg:right-40 lg:h-full lg:w-auto lg:max-w-none"
             src={imageUrl}
             alt="Customer profile user interface"
           />
@@ -69,22 +73,10 @@
     </div>
   </div>
 {:else}
-  <div class="mt-24 overflow-hidden">
+  <div class="mt-12 lg:mt-18 overflow-hidden">
     <div
-      class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24"
+      class="lg:mx-auto lg:max-w-6xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-16"
     >
-      <div class="mb-12 sm:mb-16 lg:mb-0 lg:col-start-2">
-        <div
-          class="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full"
-        >
-          <img
-            class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-40 lg:h-full lg:w-auto lg:max-w-none"
-            src={imageUrl}
-            alt="Customer profile user interface"
-          />
-        </div>
-      </div>
-
       <div
         class="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-1"
       >
@@ -119,14 +111,27 @@
               {description}
             </p>
             <!-- <div class="mt-6">
-                <a
-                  href="/"
-                  class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gse-pacificBlueMessage hover:bg-indigo-700"
-                >
-                  Get started
-                </a>
-              </div> -->
+              <a
+                href={linkUrl}
+                class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gse-pacificBlueMessage hover:bg-indigo-700"
+              >
+                Get started
+              </a>
+            </div> -->
           </div>
+        </div>
+      </div>
+
+      <div class="mt-12 sm:mt-16 lg:mt-0 lg:col-start-2">
+        <div
+          class="px-4 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full"
+        >
+          <!-- <Blob /> -->
+          <img
+            class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-40 lg:h-full lg:w-auto lg:max-w-none"
+            src={imageUrl}
+            alt="Customer profile user interface"
+          />
         </div>
       </div>
     </div>
