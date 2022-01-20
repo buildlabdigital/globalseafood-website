@@ -5,7 +5,7 @@
   export let description = "";
   export let imageUrl = "";
   export let imageSide = "left";
-  export let linkUrl = "/";
+  // export let linkUrl = "/";
 </script>
 
 {#if imageSide === "left"}
