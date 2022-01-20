@@ -1,5 +1,6 @@
 import preprocess from "svelte-preprocess";
 import adapter from "@sveltejs/adapter-static";
+import { resolve } from "path";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -11,6 +12,13 @@ const config = {
       assets: "./firebase/public",
       fallback: "index.html",
     }),
+    vite: {
+      resolve: {
+        alias: {
+          $components: resolve("src/components"),
+        },
+      },
+    },
   },
 
   preprocess: [
