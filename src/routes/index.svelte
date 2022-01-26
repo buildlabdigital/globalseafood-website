@@ -28,28 +28,28 @@
   imageSide="right"
   imageUrl="/SellOfferDetail.png"
   title="Simple Pricing & Payments"
-  description="Pricing should be simple. The seller pays $0.04 USD/lbs regardless of seafood type or location. Payment is simplied uisng a single wire payment. We route your payment to the seller to make purchasing easy."
+  description="Pricing made simple. The seller pays $0.04 USD/lbs regardless of seafood type or location. Payment is simplified using a single wire payment. We route your payment to the seller to make purchasing easy."
 />
 
 <FeatureSection
   imageSide="left"
   imageUrl="/MakeOffer.png"
   title="Make Offers"
-  description="If you'd like to allow buyers or sellers to suggest a price you can add Offers to your listing. You set a base price in your listing but Offers give buyers and seller the option to suggest another price."
+  description="If you'd like to allow buyers or sellers to suggest a price you can add Offers to your listing. You set a base price in your listing but Offers give buyers and sellers the option to suggest another price."
 />
 
 <FeatureSection
   imageSide="right"
   imageUrl="/Create.png"
   title="Creating Listings"
-  description="Creating listings is easy. Select the seafood you want to sell, list how much you have to sell, set your price, add a description, upload pictures and list it in the marketplace."
+  description="Creating listings is easy. Select the seafood you want to sell, list how much you have to sell, set your price, add a description, upload pictures, and list it in the marketplace."
 />
 
 <FeatureSection
   imageSide="left"
   imageUrl="/Filter.png"
   title="Quickly Filter"
-  description="Quickly filter the listings in the marketplace to make buying and selling easy. If you do not see what you are looking for then create a listing for other to view."
+  description="Quickly filter the listings in the marketplace to make buying and selling easy. If you do not see what you are looking for then create a listing for others to view."
 />
 
 <FeatureSection
