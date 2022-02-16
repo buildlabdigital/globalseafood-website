@@ -2,7 +2,7 @@
   let logo = `/GSELogo.png`;
   let listings = "/Listings.png";
   let tagline = `The World's Seafood Marketplace`;
-  let subTagline = `Connecting the World's seafood wholesalers and processors to make buying and selling seafood easy.`;
+  let subTagline = `Connecting the World's fisherman, wholesalers, processors, importers, exporters an everything in between to make buying and selling seafood easy.`;
   let contactEmail = "gse@globalseafoodexchange.com";
   let appleLink = "/";
   let googleLink = "/";
