@@ -1,5 +1,4 @@
 <script context="module">
-  import UnorderedList from "./UnorderedList.svelte";
   export const prerender = true;
 </script>
 
