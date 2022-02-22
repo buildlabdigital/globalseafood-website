@@ -5,8 +5,6 @@ import { resolve } from "path";
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
-    // hydrate the <div id="svelte"> element in src/app.html
-    target: "#svelte",
     adapter: adapter({
       pages: "./firebase/public",
       assets: "./firebase/public",
@@ -26,6 +24,13 @@ const config = {
       postcss: true,
     }),
   ],
+
+  prerender: {
+    crawl: true,
+    enabled: true,
+    onError: "fail",
+    entries: ["*"],
+  },
 };
 
 export default config;
