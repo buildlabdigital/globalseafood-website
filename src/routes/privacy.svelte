@@ -52,9 +52,9 @@
     This information includes, but is not limited to:
   </p>
 
-  <ul>
-    <li>
-      information from your interaction with our Website and Services,
+  <ul class="text-white">
+    <li class="text-white">
+      • information from your interaction with our Website and Services,
       including, but not limited to, device ID, device type, geo-location
       information, computer and connection information, statistics on page
       views, traffic to and from www.globalseafoodexchange.com, referring URL,
@@ -62,18 +62,22 @@
       instant messenger content; and information we collect through cookies, web
       beacons and similar technologies.
     </li>
-    <li>information to conduct market research such as:</li>
-    <ul>
-      <li>demographics of our customers</li>
-      <li>all listing activity and data including but not limited to:</li>
-      <ul>
-        <li>order history</li>
-        <li>buy, sell and offer data</li>
-        <li>listing content and data</li>
-        <li>volume of goods purchased and sold</li>
+    <li class="text-white">
+      • information to conduct market research such as:
+    </li>
+    <ul class="text-white">
+      <li class="text-white">• demographics of our customers</li>
+      <li class="text-white">
+        • all listing activity and data including but not limited to:
+      </li>
+      <ul class="text-white">
+        <li class="text-white">• order history</li>
+        <li class="text-white">• buy, sell and offer data</li>
+        <li class="text-white">• listing content and data</li>
+        <li class="text-white">• volume of goods purchased and sold</li>
       </ul>
-      <li>instant messaging content</li>
-      <li>customer engagement</li>
+      <li class="text-white">• instant messaging content</li>
+      <li class="text-white">• customer engagement</li>
     </ul>
   </ul>
 
@@ -87,23 +91,23 @@
     but is not limited to:
   </p>
 
-  <ul>
-    <li>
-      information that you provide to us when you register for an account or for
-      the Services that you use;
+  <ul class="text-white">
+    <li class="text-white">
+      • information that you provide to us when you register for an account or
+      for the Services that you use;
     </li>
-    <li>
-      additional information that you may provide to us through social media
+    <li class="text-white">
+      • additional information that you may provide to us through social media
       sites or third-party Services;
     </li>
-    <li>
-      information provided via correspondence through our Website or
+    <li class="text-white">
+      • information provided via correspondence through our Website or
       correspondence that is sent to us;
     </li>
-    <li>
-      information about your location and the location of your device, including
-      your device\'s unique identifier information if you have enabled this
-      service on your mobile device.
+    <li class="text-white">
+      • information about your location and the location of your device,
+      including your device\'s unique identifier information if you have enabled
+      this service on your mobile device.
     </li>
   </ul>
 
@@ -113,12 +117,12 @@
     information. This information includes, but is not limited to:
   </p>
 
-  <ul>
-    <li>demographic data;</li>
-    <li>navigation data;</li>
-    <li>
-      additional contact data and additional data about you from other sources,
-      such as public authorities, to the extent permitted by law.
+  <ul class="text-white">
+    <li class="text-white">• demographic data;</li>
+    <li class="text-white">• navigation data;</li>
+    <li class="text-white">
+      • additional contact data and additional data about you from other
+      sources, such as public authorities, to the extent permitted by law.
     </li>
   </ul>
 
@@ -127,18 +131,20 @@
     purposes:
   </p>
 
-  <ul>
-    <li>
-      to provide you access to our Services and Customer Support by means of
+  <ul class="text-white">
+    <li class="text-white">
+      • to provide you access to our Services and Customer Support by means of
       e-mail or telephone;
     </li>
-    <li>
-      to prevent, detect and investigate potentially prohibited or illegal
+    <li class="text-white">
+      • to prevent, detect and investigate potentially prohibited or illegal
       activities, fraud and security breaches and to enforce our Terms of Use;
     </li>
-    <li>to personalize, measure and improve our Services;</li>
-    <li>
-      to contact you, by e-mail, push notification, text message (SMS) or by
+    <li class="text-white">
+      • to personalize, measure and improve our Services;
+    </li>
+    <li class="text-white">
+      • to contact you, by e-mail, push notification, text message (SMS) or by
       telephone, to inquire about our Services and updates or any other purposes
       set forth in this Privacy Policy.
     </li>
