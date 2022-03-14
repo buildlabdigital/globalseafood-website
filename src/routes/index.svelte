@@ -28,7 +28,7 @@
   imageSide="right"
   imageUrl="/SellOfferDetail.png"
   title="Simple Pricing & Payments"
-  description="Pricing made simple. The seller pays $0.04 USD/lbs regardless of seafood type or location. Payment is simplified using a single wire payment. We route your payment to the seller to make purchasing easy."
+  description="Pricing made simple. Payment is simplified using a single wire payment. We route your payment to the seller to make purchasing easy."
 />
 
 <FeatureSection
