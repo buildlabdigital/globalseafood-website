@@ -95,7 +95,7 @@
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #909094;
+    background-color: #fff;
     transition: all 0.4s;
     transform-origin: center;
   }
@@ -149,7 +149,7 @@
   }
 
   .navbar-list.mobile {
-    background-color: rgba(0, 47, 59, 0.8);
+    background-color: rgba(0, 47, 59, 0.95);
     position: fixed;
     display: block;
     height: calc(100% - 45px);
