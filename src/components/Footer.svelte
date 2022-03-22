@@ -1,9 +1,32 @@
+<script>
+  // List of footer items
+  const footerItems = [
+    { label: "Terms", href: "#" },
+    { label: "Privacy", href: "#" },
+  ];
+</script>
+
 <footer class="mt-24 bg-gse-pacificBlueAccent sm:mt-12">
   <div
     class="mx-auto max-w-md py-12 px-4 overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
   >
     <a href="/privacy" class="hidden">Privacy</a>
-    <!-- <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+    <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+      <div class="px-5 py-2">
+        <a href="#" class="text-base text-gray-400 hover:text-gray-300">
+          Terms
+        </a>
+      </div>
+
+      <div class="px-5 py-2">
+        <a
+          href="https://globalseafoodexchange.com/privacy.html"
+          class="text-base text-gray-400 hover:text-gray-300"
+        >
+          Privacy
+        </a>
+      </div>
+
       <div class="px-5 py-2">
         <a href="#" class="text-base text-gray-400 hover:text-gray-300">
           About
@@ -12,23 +35,11 @@
 
       <div class="px-5 py-2">
         <a href="#" class="text-base text-gray-400 hover:text-gray-300">
-          Blog
+          Contact
         </a>
       </div>
 
-      <div class="px-5 py-2">
-        <a href="#" class="text-base text-gray-400 hover:text-gray-300">
-          Jobs
-        </a>
-      </div>
-
-      <div class="px-5 py-2">
-        <a href="#" class="text-base text-gray-400 hover:text-gray-300">
-          Press
-        </a>
-      </div>
-
-      <div class="px-5 py-2">
+      <!-- <div class="px-5 py-2">
         <a href="#" class="text-base text-gray-400 hover:text-gray-300">
           Accessibility
         </a>
@@ -38,7 +49,7 @@
         <a href="#" class="text-base text-gray-400 hover:text-gray-300">
           Partners
         </a>
-      </div>
+      </div> -->
     </nav>
     <div class="mt-8 flex justify-center space-x-6">
       <a href="#" class="text-gray-400 hover:text-gray-300">
@@ -57,7 +68,7 @@
         </svg>
       </a>
 
-      <a href="#" class="text-gray-400 hover:text-gray-300">
+      <!-- <a href="#" class="text-gray-400 hover:text-gray-300">
         <span class="sr-only">Instagram</span>
         <svg
           class="h-6 w-6"
@@ -71,7 +82,7 @@
             clip-rule="evenodd"
           />
         </svg>
-      </a>
+      </a> -->
 
       <a href="#" class="text-gray-400 hover:text-gray-300">
         <span class="sr-only">Twitter</span>
@@ -87,7 +98,7 @@
         </svg>
       </a>
 
-      <a href="#" class="text-gray-400 hover:text-gray-300">
+      <!-- <a href="#" class="text-gray-400 hover:text-gray-300">
         <span class="sr-only">GitHub</span>
         <svg
           class="h-6 w-6"
@@ -117,8 +128,8 @@
             clip-rule="evenodd"
           />
         </svg>
-      </a>
-    </div> -->
+      </a> -->
+    </div>
     <p class="mt-8 text-center text-base text-gray-400">
       &copy; 2022 Global Seafood Exchange. All rights reserved.
     </p>

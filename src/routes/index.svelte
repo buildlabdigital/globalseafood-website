@@ -11,10 +11,12 @@
   // import Messenger from "$components/Messenger.svelte";
   // import Currencies from "$components/Currencies.svelte";
   // import Account from "$components/Account.svelte";
+  import NavBar from "$components/NavBar.svelte";
   import FeatureSection from "$components/FeatureSection.svelte";
   import Footer from "$components/Footer.svelte";
 </script>
 
+<NavBar />
 <Hero />
 
 <FeatureSection
