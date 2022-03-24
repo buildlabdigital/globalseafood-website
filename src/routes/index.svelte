@@ -16,7 +16,7 @@
   import Footer from "$components/Footer.svelte";
 </script>
 
-<NavBar />
+<!-- <NavBar /> -->
 <Hero />
 
 <FeatureSection
