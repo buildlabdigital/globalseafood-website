@@ -1,10 +1,14 @@
 <script context="module">
+  import NavBar from "$components/NavBar.svelte";
+  import Footer from "$components/Footer.svelte";
   export const prerender = true;
 </script>
 
 <svelte:head>
   <title>Terms</title>
 </svelte:head>
+
+<NavBar />
 
 <div class="mt-6">
   <h2 class="text-3xl font-extrabold tracking-tight text-white">
@@ -24,3 +28,5 @@
     our privacy policy.
   </p>
 </div>
+
+<Footer />
