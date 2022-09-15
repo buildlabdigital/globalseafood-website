@@ -11,13 +11,27 @@
   // import Messenger from "$components/Messenger.svelte";
   // import Currencies from "$components/Currencies.svelte";
   // import Account from "$components/Account.svelte";
-  import NavBar from "$components/NavBar.svelte";
   import FeatureSection from "$components/FeatureSection.svelte";
-  import Footer from "$components/Footer.svelte";
+  import HomeHero from "./components/HomeHero.svelte";
+  import TrustedBy from "./components/TrustedBy.svelte";
+  import PrimaryFeatures from "./components/PrimaryFeatures.svelte";
+  import KeyFeatures from "./components/KeyFeatures.svelte";
+  import Pricing from "./components/Pricing.svelte";
+  import Support from "./components/Support.svelte";
+  import Testimonial from "./components/Testimonial.svelte";
+  import Team from "./components/Team.svelte";
 </script>
 
 <!-- <NavBar /> -->
-<Hero />
+<HomeHero />
+<TrustedBy />
+<PrimaryFeatures />
+<KeyFeatures />
+<Testimonial />
+<Pricing />
+<Team />
+
+<!-- <Hero />
 
 <FeatureSection
   imageSide="left"
@@ -80,9 +94,7 @@
   imageUrl="/Account.png"
   title="Account Management"
   description="Manage your account in one simple locaiton. Profile image, email address, business addresses, bank accounts, etc."
-/>
-
-<Footer />
+/> -->
 
 <!-- <BuyDetail />
 <SellOfferDetail />
