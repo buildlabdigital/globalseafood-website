@@ -118,7 +118,7 @@
             class="text-white group inline-flex items-center rounded-md bg-gse-pacificBlueAccent text-base font-medium hover:text-gse-pacificGrey "
             aria-expanded="false"
           >
-            <span>Learn</span>
+            <span>Software</span>
             <Icon
               src={ChevronRight}
               class="{flyOutMenu1Open ? 'hidden' : 'block'} ml-1 h-4 w-4"

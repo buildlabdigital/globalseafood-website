@@ -1,8 +1,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 const config = {
-  mode: "jit",
-  purge: ["./src/**/*.{html,js,svelte,ts}"],
+  content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
     extend: {
       fontFamily: {
@@ -23,6 +22,16 @@ const config = {
           orange: "#fb923c",
           red: "#ef4444",
           yellow: "#eab308",
+        },
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: "#ffffff",
+            a: {
+              color: "#009DC4",
+            },
+          },
         },
       },
     },
