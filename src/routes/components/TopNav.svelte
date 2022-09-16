@@ -273,7 +273,7 @@
 
   {#if mobileMenuOpen}
     <div
-      class="absolute inset-x-0 origin-top-right transform p-2 transition md:hidden"
+      class="absolute z-20 inset-x-0 origin-top-right transform p-2 transition md:hidden"
     >
       <div
         class="divide-y-2 divide-gse-pacificBlue rounded-lg bg-gse-pacificBlueAccent shadow-lg ring-1 ring-black ring-opacity-5"
