@@ -27,6 +27,8 @@
   },
   "type": "module",
   "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "dotenv": "^16.0.2",
     "svelte-hero-icons": "^4.1.3"
   }
 }

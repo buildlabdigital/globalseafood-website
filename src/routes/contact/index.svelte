@@ -1,5 +1,28 @@
 <script context="module">
   export const prerender = true;
+  const sendgridApiKey = import.meta.env.SENDGRID_API_KEY;
+
+  import sendgrid from "@sendgrid/mail";
+
+  sendgrid.setApiKey(sendgridApiKey);
+
+  async function sendEmail(req, res) {
+    try {
+      console.log("Called?");
+      // console.log("REQ.BODY", req.body);
+      await sendgrid.send({
+        to: "jon@globalseafoodexchange.com", // Your email where you'll receive emails
+        from: "jon@globalseafoodexchange.com", // your website email address here
+        subject: "GSE Web Form Test",
+        html: `<div>You've got a mail</div>`,
+      });
+    } catch (error) {
+      console.log(error);
+      // return res.status(error.statusCode || 500).json({ error: error.message });
+    }
+
+    // return res.status(200).json({ error: "" });
+  }
 </script>
 
 <svelte:head>
@@ -96,13 +119,11 @@
       <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
         Contact Us
       </h2>
-      <p class="mt-4 text-lg leading-6 text-white">
-        Connect with us about anything.
-      </p>
+      <p class="mt-4 text-lg leading-6 text-white">Let's talk seafood.</p>
     </div>
     <div class="mt-12">
       <form
-        action="#"
+        on:submit|preventDefault={sendEmail}
         method="POST"
         class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
       >
