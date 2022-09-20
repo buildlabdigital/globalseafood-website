@@ -29,6 +29,8 @@
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
     "dotenv": "^16.0.2",
+    "firebase": "^9.10.0",
+    "flatpickr": "^4.6.13",
     "svelte-hero-icons": "^4.1.3"
   }
 }

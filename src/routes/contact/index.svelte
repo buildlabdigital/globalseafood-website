@@ -1,27 +1,30 @@
 <script context="module">
-  export const prerender = true;
-  const sendgridApiKey = import.meta.env.SENDGRID_API_KEY;
-
   import sendgrid from "@sendgrid/mail";
+  import { notifications } from "./../../stores/notifications";
+  import api from "./../../lib/api";
+  const sendgridApiKey = import.meta.env.SENDGRID_API_KEY;
 
   sendgrid.setApiKey(sendgridApiKey);
 
+  export const prerender = true;
+
+  let submitLoading = false;
+
+  let message = { subject: "GSE Contact Form" };
+
   async function sendEmail(req, res) {
+    submitLoading = true;
     try {
-      console.log("Called?");
-      // console.log("REQ.BODY", req.body);
-      await sendgrid.send({
-        to: "jon@globalseafoodexchange.com", // Your email where you'll receive emails
-        from: "jon@globalseafoodexchange.com", // your website email address here
-        subject: "GSE Web Form Test",
-        html: `<div>You've got a mail</div>`,
-      });
+      console.log("Before Try");
+      await api.email.sendEmail(message);
+      console.log("After Try");
+      message = {};
+      submitLoading = false;
     } catch (error) {
       console.log(error);
-      // return res.status(error.statusCode || 500).json({ error: error.message });
+      message = {};
+      submitLoading = false;
     }
-
-    // return res.status(200).json({ error: "" });
   }
 </script>
 
@@ -29,22 +32,6 @@
   <title>Contact</title>
 </svelte:head>
 
-<!--
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
 <div
   class="overflow-hidden bg-gse-pacificBlue py-16 px-4 sm:px-6 lg:px-8 lg:py-24"
 >
@@ -129,56 +116,61 @@
       >
         <div>
           <label for="first-name" class="block text-sm font-medium text-white"
-            >First Name</label
+            >First Name *</label
           >
           <div class="mt-1">
+            <!-- <Input label={`Minimum Offer Number of`} type="number" /> -->
             <input
               type="text"
               name="first-name"
               id="first-name"
-              autocomplete="given-name"
+              bind:value={message.firstName}
+              required="true"
               class="block w-full bg-gse-pacificBlueAccent text-white rounded-md border-gse-pacificGrey py-3 px-4 shadow-sm focus:border-white focus:ring-white"
             />
           </div>
         </div>
         <div>
           <label for="last-name" class="block text-sm font-medium text-white"
-            >Last Name</label
+            >Last Name *</label
           >
           <div class="mt-1">
             <input
               type="text"
               name="last-name"
               id="last-name"
-              autocomplete="family-name"
+              bind:value={message.lastName}
+              required="true"
               class="block w-full bg-gse-pacificBlueAccent text-white rounded-md border-gse-pacificGrey py-3 px-4 shadow-sm focus:border-white focus:ring-white"
             />
           </div>
         </div>
         <div class="sm:col-span-2">
           <label for="company" class="block text-sm font-medium text-white"
-            >Company</label
+            >Company *</label
           >
           <div class="mt-1">
             <input
               type="text"
               name="company"
               id="company"
-              autocomplete="organization"
+              bind:value={message.companyName}
+              required="true"
               class="block w-full bg-gse-pacificBlueAccent text-white rounded-md border-gse-pacificGrey py-3 px-4 shadow-sm focus:border-white focus:ring-white"
             />
           </div>
         </div>
         <div class="sm:col-span-2">
           <label for="email" class="block text-sm font-medium text-white"
-            >Email</label
+            >Email *</label
           >
           <div class="mt-1">
             <input
               id="email"
               name="email"
               type="email"
-              autocomplete="email"
+              bind:value={message.email}
+              required="true"
               class="block w-full bg-gse-pacificBlueAccent text-white rounded-md border-gse-pacificGrey py-3 px-4 shadow-sm focus:border-white focus:ring-white"
             />
           </div>
@@ -204,7 +196,7 @@
               type="text"
               name="phone-number"
               id="phone-number"
-              autocomplete="tel"
+              bind:value={message.phoneNumber}
               class="block w-full rounded-md bg-gse-pacificBlueAccent placeholder-gse-pacificGrey text-gse-pacificGrey border-gray-300 py-3 px-4 pl-20 focus:border-white focus:ring-white"
               placeholder="+1 (555) 987-6543"
             />
@@ -212,13 +204,15 @@
         </div>
         <div class="sm:col-span-2">
           <label for="message" class="block text-sm font-medium text-white"
-            >Message</label
+            >Message *</label
           >
           <div class="mt-1">
             <textarea
               id="message"
               name="message"
               rows="4"
+              required="true"
+              bind:value={message.text}
               class="block w-full bg-gse-pacificBlueAccent text-white rounded-md border-gse-pacificGrey py-3 px-4 shadow-sm focus:border-white focus:ring-white"
             />
           </div>
@@ -245,13 +239,13 @@
               <p class="text-base text-gse-pacificGrey">
                 By selecting this, you agree to the
                 <a
-                  href="#"
+                  href="/privacy"
                   class="font-medium text-gse-pacificBlueMessage underline"
                   >Privacy Policy</a
                 >
                 and
                 <a
-                  href="#"
+                  href="/terms"
                   class="font-medium text-gse-pacificBlueMessage underline"
                   >Terms</a
                 >.
@@ -262,8 +256,9 @@
         <div class="sm:col-span-2">
           <button
             type="submit"
+            disabled={submitLoading}
             class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-gse-pacificBlueMessage px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-gse-pacificBlueMessage focus:outline-none focus:ring-2 focus:ring-gse-pacificBlueMessage focus:ring-offset-2"
-            >Let's talk</button
+            >Send Message</button
           >
         </div>
       </form>
