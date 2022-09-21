@@ -11,7 +11,6 @@ export function callFunction(name, data = {}) {
   return functions
     .httpsCallable(name)(data)
     .then((result) => {
-      console.log(result);
       result.data;
     })
     .catch((e) => {

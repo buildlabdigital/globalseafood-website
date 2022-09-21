@@ -1,31 +1,52 @@
 <script context="module">
-  import sendgrid from "@sendgrid/mail";
   import { notifications } from "./../../stores/notifications";
+  import Input from "./../../../src/components/ui-elements/Input.svelte";
   import api from "./../../lib/api";
-  const sendgridApiKey = import.meta.env.SENDGRID_API_KEY;
-
-  sendgrid.setApiKey(sendgridApiKey);
 
   export const prerender = true;
 
   let submitLoading = false;
-
-  let message = { subject: "GSE Contact Form" };
+  let firstName = "";
+  let lastName = "";
+  let companyName = "";
+  let email = "";
+  let phoneNumber = "";
+  let message = "";
 
   async function sendContactEmail() {
     submitLoading = true;
+
+    let messageObj = {
+      subject: "GSE Contact Form",
+      firstName: firstName,
+      lastName: lastName,
+      companyName: companyName,
+      email: email,
+      phoneNumber: phoneNumber,
+      message: message,
+    };
     try {
       console.log("Before Try");
-      await api.email.sendEmail(message);
+      await api.email.sendEmail(messageObj);
+      clearForm();
       console.log("After Try");
-      message = {};
       submitLoading = false;
     } catch (error) {
       console.log(error);
-      message = {};
+      clearForm();
       submitLoading = false;
     }
   }
+
+  let clearForm = () => {
+    console.log("Called?");
+    firstName = "";
+    lastName = "";
+    companyName = "";
+    email = "";
+    phoneNumber = "";
+    message = "";
+  };
 </script>
 
 <svelte:head>
@@ -119,12 +140,17 @@
             >First Name *</label
           >
           <div class="mt-1">
-            <!-- <Input label={`Minimum Offer Number of`} type="number" /> -->
+            <!-- <Input
+              label="Business Address 1"
+              type="text"
+              bind:value={message.firstName}
+              required={true}
+            /> -->
             <input
               type="text"
               name="first-name"
               id="first-name"
-              bind:value={message.firstName}
+              bind:value={firstName}
               required="true"
               class="block w-full bg-gse-pacificBlueAccent text-white rounded-md border-gse-pacificGrey py-3 px-4 shadow-sm focus:border-white focus:ring-white"
             />
@@ -139,7 +165,7 @@
               type="text"
               name="last-name"
               id="last-name"
-              bind:value={message.lastName}
+              bind:value={lastName}
               required="true"
               class="block w-full bg-gse-pacificBlueAccent text-white rounded-md border-gse-pacificGrey py-3 px-4 shadow-sm focus:border-white focus:ring-white"
             />
@@ -154,7 +180,7 @@
               type="text"
               name="company"
               id="company"
-              bind:value={message.companyName}
+              bind:value={companyName}
               required="true"
               class="block w-full bg-gse-pacificBlueAccent text-white rounded-md border-gse-pacificGrey py-3 px-4 shadow-sm focus:border-white focus:ring-white"
             />
@@ -169,7 +195,7 @@
               id="email"
               name="email"
               type="email"
-              bind:value={message.email}
+              bind:value={email}
               required="true"
               class="block w-full bg-gse-pacificBlueAccent text-white rounded-md border-gse-pacificGrey py-3 px-4 shadow-sm focus:border-white focus:ring-white"
             />
@@ -196,7 +222,7 @@
               type="text"
               name="phone-number"
               id="phone-number"
-              bind:value={message.phoneNumber}
+              bind:value={phoneNumber}
               class="block w-full rounded-md bg-gse-pacificBlueAccent placeholder-gse-pacificGrey text-gse-pacificGrey border-gray-300 py-3 px-4 pl-20 focus:border-white focus:ring-white"
               placeholder="+1 (555) 987-6543"
             />
@@ -212,7 +238,7 @@
               name="message"
               rows="4"
               required="true"
-              bind:value={message.text}
+              bind:value={message}
               class="block w-full bg-gse-pacificBlueAccent text-white rounded-md border-gse-pacificGrey py-3 px-4 shadow-sm focus:border-white focus:ring-white"
             />
           </div>
