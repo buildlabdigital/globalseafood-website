@@ -12,7 +12,7 @@
 
   let message = { subject: "GSE Contact Form" };
 
-  async function sendEmail(req, res) {
+  async function sendContactEmail() {
     submitLoading = true;
     try {
       console.log("Before Try");
@@ -110,7 +110,7 @@
     </div>
     <div class="mt-12">
       <form
-        on:submit|preventDefault={sendEmail}
+        on:submit|preventDefault={sendContactEmail}
         method="POST"
         class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
       >
@@ -257,7 +257,7 @@
           <button
             type="submit"
             disabled={submitLoading}
-            class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-gse-pacificBlueMessage px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-gse-pacificBlueMessage focus:outline-none focus:ring-2 focus:ring-gse-pacificBlueMessage focus:ring-offset-2"
+            class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-gse-pacificBlueMessage px-6 py-3 text-base font-medium text-white hover:bg-gse-pacificGrey focus:outline-none"
             >Send Message</button
           >
         </div>
