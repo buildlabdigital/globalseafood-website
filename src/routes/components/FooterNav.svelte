@@ -4,13 +4,16 @@
     { label: "iOS", href: "/mobile" },
   ];
 
-  let supportLinks = [{ label: "Contact", href: "/contact" }];
+  let supportLinks = [
+    { label: "Contact", href: "/contact" },
+    { label: "Book Demo", href: "/demo" },
+  ];
 
   let companyLinks = [
-    { label: "About", href: "/about" },
+    // { label: "About", href: "/about" },
     { label: "Team", href: "/team" },
-    // { label: "Blog", href: "/blog" },
-    { label: "Partners", href: "/partners" },
+    { label: "Blog", href: "/blog" },
+    // { label: "Partners", href: "/partners" },
   ];
 
   let legalLinks = [

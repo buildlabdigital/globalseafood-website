@@ -11,6 +11,7 @@
     ChatAlt,
     Globe,
     User,
+    BookOpen,
   } from "svelte-hero-icons";
   import { page } from "$app/stores";
   import MobileMenu from "./MobileMenu.svelte";
@@ -49,6 +50,12 @@
       message: "Meet our team.",
     },
     {
+      label: "Blog",
+      href: "/blog",
+      icon: BookOpen,
+      message: "Keep up with our latest progress and developments.",
+    },
+    {
       label: "Sustainability",
       href: "/sustainability",
       icon: DeviceMobile,
@@ -79,9 +86,6 @@
 
 <svelte:body on:click={menuClicked} />
 
-<!-- This example requires Tailwind CSS v2.0+ -->
-
-<!-- This example requires Tailwind CSS v2.0+ -->
 <div class="relative bg-gse-pacificBlueAccent">
   <div
     class="flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10"

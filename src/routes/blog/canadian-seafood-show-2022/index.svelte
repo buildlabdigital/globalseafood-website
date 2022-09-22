@@ -1,11 +1,3 @@
-<script context="module">
-  export const prerender = true;
-</script>
-
-<svelte:head>
-  <title>Book Demo</title>
-</svelte:head>
-
 <!--
   This example requires Tailwind CSS v2.0+ 
   
@@ -125,38 +117,28 @@
       </svg>
     </div>
   </div>
-  <div class="relative px-4 sm:px-6 lg:px-8 mb-12">
+  <div class="relative px-4 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-prose text-lg">
       <h1>
         <span
           class="block text-center text-lg font-semibold text-gse-pacificBlueMessage"
-          >GSE Live</span
+          >Trade Show</span
         >
         <span
           class="mt-2 block text-center text-3xl font-bold leading-8 tracking-tight text-white sm:text-4xl"
-          >Book a Demo Now</span
+          >Canadian Seafood Show 2022</span
         >
       </h1>
       <p class="mt-8 text-xl leading-8 text-gse-pacificGrey">
-        Book a live Zoom call to get a demo of the GSE Live software to learn
-        how it can help your seafood business buy and sell seafood B2B. We're
-        here to answer your questions so let's get you on the schedule so we can
-        get to know one another better.
+        Thank you Montreal! The Canadian Seafood show for 2022 was a success. We
+        connected with our first processors and wholesalers and have begun
+        signing people up to the GSE Live. <br /> <br />After nearly two years
+        of development and inteviewing industry experts it's wonderful to
+        receive positive feeback and new users.<br /><br />
       </p>
     </div>
-    <!-- Calendly inline widget begin -->
-    <div
-      class="calendly-inline-widget"
-      data-url="https://calendly.com/global-seafood-exchange/30min?background_color=1d454f&text_color=ffffff&primary_color=009dc4"
-      style="min-width:320px;height:630px;"
-    />
-    <script
-      type="text/javascript"
-      src="https://assets.calendly.com/assets/external/widget.js"
-      async></script>
-    <!-- Calendly inline widget end -->
-    <!-- <div class="prose prose-lg prose-indigo mx-auto mt-6 text-gse-pacificGrey"> -->
-    <!-- <p>
+    <div class="prose prose-lg prose-indigo mx-auto mt-6 text-gse-pacificGrey">
+      <!-- <p>
         Faucibus commodo massa rhoncus, volutpat. <strong
           class="text-gse-pacificGrey">Dignissim</strong
         >
@@ -201,7 +183,7 @@
         donec est. Odio penatibus risus viverra tellus varius sit neque erat
         velit.
       </p> -->
-    <!-- <figure>
+      <figure>
         <img
           class="w-full rounded-lg"
           src="/CanadianSeafoodShow.jpg"
@@ -210,8 +192,8 @@
           height="873"
         />
         <figcaption>Canadian Seafood Show 2022</figcaption>
-      </figure> -->
-    <!-- <h2 class="text-white">Everything you need to get up and running</h2>
+      </figure>
+      <!-- <h2 class="text-white">Everything you need to get up and running</h2>
       <p>
         Purus morbi dignissim senectus mattis <a href="#">adipiscing</a>. Amet,
         massa quam varius orci dapibus volutpat cras. In amet eu ridiculus leo
@@ -226,6 +208,6 @@
         donec est. Odio penatibus risus viverra tellus varius sit neque erat
         velit.
       </p> -->
-    <!-- </div> -->
+    </div>
   </div>
 </div>
