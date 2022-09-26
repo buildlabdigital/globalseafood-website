@@ -18,7 +18,7 @@
     <div class="mt-12 -mb-10 sm:-mb-24 lg:-mb-80">
       <img
         class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
-        src="/AppView.png"
+        src="/web/ListingsWeb.png"
         alt=""
       />
     </div>

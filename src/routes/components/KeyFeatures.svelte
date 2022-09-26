@@ -79,11 +79,12 @@
                 </span>
               </div>
               <h3 class="mt-8 text-lg font-medium tracking-tight text-white">
-                Order Management
+                Order & Offer Management
               </h3>
               <p class="mt-5 text-base text-gse-pacificGrey">
-                Keep track of all your orders in one place. With a convenient
-                .csv export quarter reports and year end filings are a breeze.
+                Keep track of all your orders and offers in one place. With a
+                convenient .csv export for orders quarterly reports and year end
+                filings are a breeze.
               </p>
             </div>
           </div>

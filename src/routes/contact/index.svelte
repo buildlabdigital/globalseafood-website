@@ -1,6 +1,8 @@
 <script context="module">
+  import { onMount } from "svelte";
   import { notifications } from "./../../stores/notifications";
   import Input from "./../../../src/components/ui-elements/Input.svelte";
+  import { goto, afterNavigate } from "$app/navigation";
   import api from "./../../lib/api";
 
   export const prerender = true;
@@ -12,6 +14,10 @@
   let email = "";
   let phoneNumber = "";
   let message = "";
+
+  // onMount(async () => {
+  //   // clearForm();
+  // });
 
   async function sendContactEmail() {
     submitLoading = true;
@@ -26,10 +32,11 @@
       message: message,
     };
     try {
-      console.log("Before Try");
+      // console.log("Before Try");
       await api.email.sendEmail(messageObj);
+      goto("/contact/contact-complete");
       clearForm();
-      console.log("After Try");
+      // console.log("After Try");
       submitLoading = false;
     } catch (error) {
       console.log(error);

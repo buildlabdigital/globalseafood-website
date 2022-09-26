@@ -44,24 +44,24 @@
 
   let flyOutMenu2Links = [
     {
-      label: "Team",
-      href: "/team",
-      icon: Users,
-      message: "Meet our team.",
-    },
-    {
       label: "Blog",
       href: "/blog",
       icon: BookOpen,
       message: "Keep up with our latest progress and developments.",
     },
     {
-      label: "Sustainability",
-      href: "/sustainability",
-      icon: DeviceMobile,
-      message:
-        "Learn about our efforts towards sustainable oceans and fish stocks.",
+      label: "Team",
+      href: "/team",
+      icon: Users,
+      message: "Meet our team.",
     },
+    // {
+    //   label: "Sustainability",
+    //   href: "/sustainability",
+    //   icon: DeviceMobile,
+    //   message:
+    //     "Learn about our efforts towards sustainable oceans and fish stocks.",
+    // },
     // { label: "Contact", href: "/contact", icon: ChatAlt },
   ];
 

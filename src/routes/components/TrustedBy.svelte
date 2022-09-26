@@ -14,26 +14,32 @@
     >
       Proudly Supporting Great Seafood Companies
     </p>
-    <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
+    <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-2 lg:mt-8">
       <div
         class="col-span-1 flex justify-center bg-gse-pacificBlueAccent py-8 px-8"
       >
-        <img
-          class="max-h-12"
-          src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
+        <h2 class="text-2xl text-center font-semibold text-gse-pacificGrey">
+          Chad Brown Seafoods
+        </h2>
+        <!-- <img
+          class="max-h-24"
+          src="/ChadBrownSeafoodsLogo.jpg"
           alt="Workcation"
-        />
+        /> -->
       </div>
       <div
         class="col-span-1 flex justify-center bg-gse-pacificBlueAccent py-8 px-8"
       >
-        <img
-          class="max-h-12"
-          src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
+        <h2 class="text-2xl text-center font-semibold text-gse-pacificGrey">
+          Young's Lobster Company
+        </h2>
+        <!-- <img
+          class="max-h-24"
+          src="/YoungsLobsterCompanyLogo.jpg"
           alt="Mirage"
-        />
+        /> -->
       </div>
-      <div
+      <!-- <div
         class="col-span-1 flex justify-center bg-gse-pacificBlueAccent py-8 px-8"
       >
         <img
@@ -68,7 +74,7 @@
           src="https://tailwindui.com/img/logos/statamic-logo-gray-400.svg"
           alt="Statamic"
         />
-      </div>
+      </div> -->
     </div>
   </div>
 </div>

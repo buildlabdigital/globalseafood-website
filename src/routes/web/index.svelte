@@ -1,4 +1,5 @@
 <script context="module">
+  import { Icon, Inbox } from "svelte-hero-icons";
   export const prerender = true;
 </script>
 
@@ -6,7 +7,7 @@
   <title>Web</title>
 </svelte:head>
 
-<!-- This example requires Tailwind CSS v2.0+ -->
+<!-- Hero Image -->
 <div
   class="relative overflow-hidden bg-gse-pacificBlue pt-16 sm:pt-24 lg:pt-32"
 >
@@ -31,41 +32,34 @@
     <div class="mt-12 -mb-10 sm:-mb-24 lg:-mb-80">
       <img
         class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
-        src="https://tailwindui.com/img/component-images/top-nav-with-multi-column-layout-screenshot.jpg"
+        src="/web/SeafoodStorePublic.png"
         alt=""
       />
     </div>
   </div>
 </div>
-<!-- This example requires Tailwind CSS v2.0+ -->
+<!-- Section 1 - Text Block  -->
 <div class="bg-gse-pacificBlue mt-10">
   <div class="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
     <div class="text-center">
       <h2 class="text-3xl font-semibold text-gse-pacificBlueMessage">
-        Pricing
+        Listings
       </h2>
       <p
         class="mt-1 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl"
       >
-        Take control of your team.
+        Simple Buy & Sell Listings
       </p>
       <p class="mx-auto mt-5 max-w-xl text-xl text-gse-pacificGrey">
-        Start building for free, then add a site plan to go live. Account plans
-        unlock additional features.
+        We've created simple two way listings. Looking to sell seafood? Create a
+        Buy listing. Looking to buy seafood? Create a Sell listing. Manage your
+        sales and purchasing 24/7 with your own Seafood Store.
       </p>
     </div>
   </div>
 </div>
-<!-- This example requires Tailwind CSS v2.0+ -->
+<!-- Section 2 - Text Image Right  -->
 <div class="relative overflow-hidden mt-10 bg-gse-pacificBlue pt-10 pb-32">
-  <!-- <div class="mt-24">
-    <div
-      class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8"
-    >
-      <div
-        class="mx-auto max-w-xl px-4 sm:px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0"
-      > -->
-
   <div class="relative">
     <div
       class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8"
@@ -79,67 +73,28 @@
               class="flex h-12 w-12 items-center justify-center rounded-md bg-gse-pacificBlueMessage"
             >
               <!-- Heroicon name: outline/inbox -->
-              <svg
-                class="h-6 w-6 text-white"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z"
-                />
-              </svg>
+              <Icon src={Inbox} class="h-6 w-6 text-white" />
             </span>
           </div>
           <div class="mt-6">
             <h2 class="text-3xl font-bold tracking-tight text-white">
-              Stay on top of customer support
+              Listing Management
             </h2>
             <p class="mt-4 text-lg text-gse-pacificGrey">
-              Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
-              bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet
-              sagittis viverra duis. In venenatis sem arcu pretium pharetra at.
-              Lectus viverra dui tellus ornare pharetra.
+              See all of your lisitngs in one convenient location. Make edits to
+              exisitng listings to managed inventory levels or update shipment
+              dates. You can also create pre-orders for buying or selling
+              seafood at a future date to hedge your pricing.
             </p>
             <div class="mt-6">
               <a
-                href="#"
+                href="https://app.globalseafoodexchange.com/"
                 class="inline-flex rounded-md border border-transparent bg-gse-pacificBlueMessage px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-gse-pacificGrey"
-                >Get started</a
+                >Get Started</a
               >
             </div>
           </div>
         </div>
-        <!-- <div class="mt-8 border-t border-gray-200 pt-6">
-          <blockquote>
-            <div>
-              <p class="text-base text-gray-500">
-                &ldquo;Cras velit quis eros eget rhoncus lacus ultrices sed
-                diam. Sit orci risus aenean curabitur donec aliquet. Mi
-                venenatis in euismod ut.&rdquo;
-              </p>
-            </div>
-            <footer class="mt-3">
-              <div class="flex items-center space-x-3">
-                <div class="flex-shrink-0">
-                  <img
-                    class="h-6 w-6 rounded-full"
-                    src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
-                    alt=""
-                  />
-                </div>
-                <div class="text-base font-medium text-gray-700">
-                  Marcia Hill, Digital Marketing Manager
-                </div>
-              </div>
-            </footer>
-          </blockquote>
-        </div> -->
       </div>
       <div class="mt-12 sm:mt-16 lg:mt-0">
         <div
@@ -147,32 +102,33 @@
         >
           <img
             class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-            src="https://tailwindui.com/img/component-images/inbox-app-screenshot-1.jpg"
+            src="/web/ListingsWeb.png"
             alt="Inbox user interface"
           />
         </div>
       </div>
     </div>
   </div>
-  <!-- This example requires Tailwind CSS v2.0+ -->
+  <!-- Section 3 - Text Block  -->
   <div class="bg-gse-pacificBlue mt-10">
     <div class="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
       <div class="text-center">
         <h2 class="text-3xl font-semibold text-gse-pacificBlueMessage">
-          Pricing
+          Seafood
         </h2>
         <p
           class="mt-1 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl"
         >
-          Take control of your team.
+          50+ Species of Seafood
         </p>
         <p class="mx-auto mt-5 max-w-xl text-xl text-gse-pacificGrey">
-          Start building for free, then add a site plan to go live. Account
-          plans unlock additional features.
+          We have more than 50 species of seafood available. Don't see the
+          species you need? Simple ask and we will get it added.
         </p>
       </div>
     </div>
   </div>
+  <!-- Section 4 - Text Image Left  -->
   <div class="mt-10">
     <div
       class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8"
@@ -186,38 +142,24 @@
               class="flex h-12 w-12 items-center justify-center rounded-md bg-gse-pacificBlueMessage"
             >
               <!-- Heroicon name: outline/sparkles -->
-              <svg
-                class="h-6 w-6 text-white"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
-                />
-              </svg>
+              <Icon src={Inbox} class="h-6 w-6 text-white" />
             </span>
           </div>
           <div class="mt-6">
             <h2 class="text-3xl font-bold tracking-tight text-white">
-              Better understand your customers
+              Receive Orders & Offers 24/7
             </h2>
             <p class="mt-4 text-lg text-gse-pacificGrey">
-              Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
-              bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet
-              sagittis viverra duis. In venenatis sem arcu pretium pharetra at.
-              Lectus viverra dui tellus ornare pharetra.
+              With direct links to you products, your seafood is available 24/7.
+              Wether you're buying or selling your Seafood Store works for you
+              around the clock. You can also accept offers to engage with
+              customers wanting to negotiate pricing.
             </p>
             <div class="mt-6">
               <a
-                href="#"
+                href="https://app.globalseafoodexchange.com/"
                 class="inline-flex rounded-md border border-transparent bg-gse-pacificBlueMessage px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-gse-pacificGrey"
-                >Get started</a
+                >Get Started</a
               >
             </div>
           </div>
@@ -229,10 +171,189 @@
         >
           <img
             class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-            src="https://tailwindui.com/img/component-images/inbox-app-screenshot-2.jpg"
+            src="/web/ListingWeb.png"
             alt="Customer profile user interface"
           />
         </div>
+      </div>
+    </div>
+  </div>
+  <!-- Section 5 - Text Block  -->
+  <div class="bg-gse-pacificBlue mt-10">
+    <div class="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h2 class="text-3xl font-semibold text-gse-pacificBlueMessage">
+          Pricing Protection
+        </h2>
+        <p
+          class="mt-1 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl"
+        >
+          Protect Your Pricing
+        </p>
+        <p class="mx-auto mt-5 max-w-xl text-xl text-gse-pacificGrey">
+          Protecting your pricing is simple when you only allow for offers on
+          your listings. You do not expose your pricing to potentail customers
+          and let them make the offers to you.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Section 6 - Text Image Right -->
+  <div class="relative mt-10">
+    <div
+      class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8"
+    >
+      <div
+        class="mx-auto max-w-xl px-4 sm:px-6 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0"
+      >
+        <div>
+          <div>
+            <span
+              class="flex h-12 w-12 items-center justify-center rounded-md bg-gse-pacificBlueMessage"
+            >
+              <!-- Heroicon name: outline/inbox -->
+              <Icon src={Inbox} class="h-6 w-6 text-white" />
+            </span>
+          </div>
+          <div class="mt-6">
+            <h2 class="text-3xl font-bold tracking-tight text-white">
+              Manage Your Orders and Offers
+            </h2>
+            <p class="mt-4 text-lg text-gse-pacificGrey">
+              Manage all incoming and outgoing orders and offers in one place.
+              Keep track of who needs to be paid and who owes you money. Accept
+              or reject offers made. Best of all, receive orders and offers 24/7
+              through you Seafood Store page.
+            </p>
+            <div class="mt-6">
+              <a
+                href="https://app.globalseafoodexchange.com/"
+                class="inline-flex rounded-md border border-transparent bg-gse-pacificBlueMessage px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-gse-pacificGrey"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 sm:mt-16 lg:mt-0">
+        <div
+          class="-mr-48 pl-4 sm:pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0"
+        >
+          <img
+            class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+            src="/web/ListingsWeb.png"
+            alt="Inbox user interface"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Section 7 - Text Block  -->
+  <div class="bg-gse-pacificBlue mt-10">
+    <div class="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h2 class="text-3xl font-semibold text-gse-pacificBlueMessage">
+          Exporting
+        </h2>
+        <p
+          class="mt-1 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl"
+        >
+          Export Your Orders
+        </p>
+        <p class="mx-auto mt-5 max-w-xl text-xl text-gse-pacificGrey">
+          Year end reporting has never been easier. Export all of your orders
+          and make your bookkeepers day. No more managing orders in excel or on
+          paper.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Section 8 - Text Image Left  -->
+  <div class="mt-10">
+    <div
+      class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8"
+    >
+      <div
+        class="mx-auto max-w-xl px-4 sm:px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0"
+      >
+        <div>
+          <div>
+            <span
+              class="flex h-12 w-12 items-center justify-center rounded-md bg-gse-pacificBlueMessage"
+            >
+              <!-- Heroicon name: outline/sparkles -->
+              <Icon src={Inbox} class="h-6 w-6 text-white" />
+            </span>
+          </div>
+          <div class="mt-6">
+            <h2 class="text-3xl font-bold tracking-tight text-white">
+              Manage Your Account
+            </h2>
+            <p class="mt-4 text-lg text-gse-pacificGrey">
+              Your account page allows for quick management of your Seafood
+              Store page, addresses, bank accounts, and more. Powerful tools
+              made simple to help you buy and seel seafood.
+            </p>
+            <div class="mt-6">
+              <a
+                href="https://app.globalseafoodexchange.com/"
+                class="inline-flex rounded-md border border-transparent bg-gse-pacificBlueMessage px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-gse-pacificGrey"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 sm:mt-16 lg:col-start-1 lg:mt-0">
+        <div
+          class="-ml-48 pr-4 sm:pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0"
+        >
+          <img
+            class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+            src="/web/AccountWebWide.png"
+            alt="Customer profile user interface"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Section 9 - Text Block  -->
+  <div class="bg-gse-pacificBlue mt-10">
+    <div class="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h2 class="text-3xl font-semibold text-gse-pacificBlueMessage">
+          38 Currencies
+        </h2>
+        <p
+          class="mt-1 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl"
+        >
+          Currencies For Your Business
+        </p>
+        <p class="mx-auto mt-5 max-w-xl text-xl text-gse-pacificGrey">
+          Create listings and transact in currencies that make sense for your
+          business. With 38 currencies, the choice is yours.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Section 10 - Text Block  -->
+  <div class="bg-gse-pacificBlue mt-10">
+    <div class="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h2 class="text-3xl font-semibold text-gse-pacificBlueMessage">
+          Coming Soon
+        </h2>
+        <p
+          class="mt-1 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl"
+        >
+          GSE Marketplace
+        </p>
+        <p class="mx-auto mt-5 max-w-xl text-xl text-gse-pacificGrey">
+          Coming soon is the GSE Marketplace. See all listing from every company
+          in one place. Filter listings to easily find what you need. Finding
+          new customers will be a breeze. Use the power of the GSE Marketplace
+          to buy and sell seafood.
+        </p>
       </div>
     </div>
   </div>
