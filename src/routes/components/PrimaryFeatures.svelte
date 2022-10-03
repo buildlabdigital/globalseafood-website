@@ -12,7 +12,7 @@
       <p class="mx-auto mt-5 max-w-prose text-xl text-gse-pacificGrey">
         Our web software allows you to buy and sell seafood from your own
         seafood store page, easily manage all your products, and export all
-        order information with teh click of a button.
+        order information with the click of a button.
       </p>
     </div>
     <div class="mt-12 -mb-10 sm:-mb-24 lg:-mb-80">
